@@ -1,0 +1,44 @@
+/* Fonts */
+$font: 'Roboto', sans-serif;
+$accent-font: 'Nixie One', sans-serif;
+
+/* Coolors Exported Palette - coolors.co/565264-706677-a6808c-ccb7ae-d6cfcb */
+$old-silver-lighten: #84818e; //rgba(132, 129, 142, 1);
+$old-silver: #565264; //rgba(86, 82, 100, 1);
+$old-silver-darken: #3f3c49; //rgba(63, 60, 73, 1);
+
+$old-lavender-lighten: #978f9c; //rgba(151, 143, 156, 1);
+$old-lavender: #706677; //rgba(112, 102, 119, 1);
+$old-lavender-darken: #524b57; //rgba(82, 75, 87, 1);
+
+$old-pink-lighten: #bea2ab; //rgba(190, 162, 171, 1);
+$old-pink: #a6808c; //rgba(166, 128, 140, 1);
+$old-pink-darken: #795e66; //rgba(121, 94, 102, 1);
+
+$silver-pink-lighten: #d9cac4; //rgba(217, 202, 196, 1);
+$silver-pink: #ccb7ae; //rgba(204, 183, 174, 1);
+$silver-pink-darken: #95867f; //rgba(149, 134, 127, 1);
+
+$pastel-grey-lighten: #e1dcd9; //rgba(225, 220, 217, 1);
+$pastel-grey: #d6cfcb; //rgba(214, 207, 203, 1);
+$pastel-grey-darken: #9c9794; //rgba(156, 151, 148, 1);
+
+$dark: #1b1b1b;
+
+/* Responsive layout */
+/* Large devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (min-height: 412px) {
+	body {
+		font-size: 16px !important;
+	}
+	.container {
+		max-width: 70%;
+	}
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1200px) {
+	.container {
+		max-width: 60%;
+	}
+}

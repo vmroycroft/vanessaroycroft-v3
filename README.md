@@ -1,19 +1,24 @@
 # Personal Website ![v3](https://img.shields.io/github/package-json/v/vmroycroft/vanessaroycroft-v3.svg)
+
 This is the current version of my personal website built with [Vue.js](https://vuejs.org/).
 
-## Project setup
+## Quick Start
 
-```
-npm install
-```
+1. Install dependencies
 
-### Compiles and hot-reloads for development
+   ```
+   npm install
+   ```
 
-```
-npm run serve
-```
+2. Start the development server
 
-### Compiles and minifies for production
+   ```
+   npm run serve
+   ```
+
+## Building for production
+
+A minified production build can be generated for deployment:
 
 ```
 npm run build

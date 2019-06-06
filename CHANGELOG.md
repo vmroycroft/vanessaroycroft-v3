@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Vendor prefixes (now uses PostCSS)
 
-## 3.0.0: June 1, 2019
+## 3.0.0: May 26, 2019
 
 ### Added
 

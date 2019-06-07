@@ -1,4 +1,5 @@
 .DS_Store
+rsync-exclude.txt
 node_modules
 dist
 **/_backup/**/*

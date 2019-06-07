@@ -5,9 +5,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 3.3.0: June 7, 2019
+
 ### Added
 
 - GitHub and email links
+- Relocated the resume link to the top with the GitHub and email links
+- UI changes for the "About Me" section
+- Increased font size for enhanced readability
 
 ## 3.2.0: June 2, 2019
 

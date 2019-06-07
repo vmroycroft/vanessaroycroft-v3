@@ -1,127 +1,146 @@
 <template>
-  <div id="app" v-scroll="onScroll">
-    <Header />
-    <AboutMe />
-    <Experience />
-    <Education />
-    <SectionButton />
-    <Footer />
-  </div>
+	<div id="app" v-scroll="onScroll">
+		<Header />
+		<AboutMe />
+		<Experience />
+		<Education />
+		<SectionButton />
+		<Footer />
+	</div>
 </template>
 
 <script>
-import EventBus from "./EventBus";
-import Header from "./components/Header.vue";
-import AboutMe from "./components/AboutMe.vue";
-import Experience from "./components/Experience.vue";
-import Education from "./components/Education.vue";
-import SectionButton from "./components/SectionButton.vue";
-import Footer from "./components/Footer.vue";
+	import EventBus from "./EventBus";
+	import Header from "./components/Header.vue";
+	import AboutMe from "./components/AboutMe.vue";
+	import Experience from "./components/Experience.vue";
+	import Education from "./components/Education.vue";
+	import SectionButton from "./components/SectionButton.vue";
+	import Footer from "./components/Footer.vue";
 
-export default {
-  name: "app",
-  components: {
-    Header,
-    AboutMe,
-    Experience,
-    Education,
-    SectionButton,
-    Footer
-  },
-  methods: {
-    onScroll() {
-      EventBus.$emit("scroll");
-    }
-  }
-};
+	export default {
+		name: "app",
+		components: {
+			Header,
+			AboutMe,
+			Experience,
+			Education,
+			SectionButton,
+			Footer
+		},
+		methods: {
+			onScroll() {
+				EventBus.$emit("scroll");
+			}
+		}
+	};
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css?family=Nixie+One|Roboto");
-@import "./styles/theme.scss";
-@import "~animate.css";
+	@import "~animate.css";
 
-html,
-body,
-#app {
-  height: 100vh;
-  margin: 0;
-}
+	html,
+	body,
+	#app {
+		height: 100vh;
+		margin: 0;
+	}
 
-body {
-  font-family: $font;
-  font-size: 14px;
-  line-height: 1.5;
-}
+	#app {
+		font-family: $font-family;
+		line-height: $line-height;
+		font-size: $font-size;
+		/* Special case for very small phones, e.g. iPhone 5/SE */
+		@media only screen and (max-width: 345px) {
+			font-size: 14px;
+		}
+	}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 0.8em 0;
-  padding: 0;
-}
+	a {
+		color: $link-color;
+	}
+	a:hover {
+		cursor: pointer;
+		color: $link-color-hover;
+	}
 
-ul {
-  margin-bottom: 0;
-}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 0 0 0.8em 0;
+		padding: 0;
+	}
 
-.text-accent-color {
-  color: $old-pink-lighten;
-  text-shadow: 1px 1px 2px $dark;
-}
+	h1 {
+		font-size: $font-size-h1;
+	}
+	h2 {
+		font-size: $font-size-h2;
+	}
+	h3 {
+		font-size: $font-size-h3;
+	}
 
-.text-accent-font {
-  font-family: $accent-font;
-}
+	ul {
+		margin-bottom: 0;
 
-h1 {
-  font-size: 2.3em;
-}
-h2 {
-  font-size: 1.7em;
-}
+		&:not(:last-child) {
+			margin-bottom: 3em;
+		}
+	}
 
-.container {
-  max-width: 90%;
-  margin: auto;
-}
+	.container-flex {
+		display: flex;
+		align-items: center;
+	}
 
-.section {
-  color: $dark;
-  overflow: hidden;
-  padding-top: 3em;
-  padding-bottom: 3em;
+	.container {
+		margin: auto;
+		max-width: 90%;
+		@media only screen and (min-width: 760px) {
+			max-width: 75%;
+		}
+		@media only screen and (min-width: 1200px) {
+			max-width: 60%;
+		}
+	}
 
-  h2 {
-    border-left: 3px solid $silver-pink;
-    padding-left: 10px;
-  }
-}
+	.date {
+		color: $pastel-grey-darken;
+		font-size: 0.6em;
+		margin-left: 5px;
+	}
 
-.logo {
-  background-color: #fff;
-  border-radius: 50%;
-  float: left;
-  height: 50px;
-  margin-right: 15px;
-  width: 50px;
-}
+	.logo {
+		background-color: #fff;
+		border-radius: 50%;
+		float: left;
+		height: 50px;
+		margin-right: 15px;
+		width: 50px;
+	}
 
-.date {
-  color: $pastel-grey-darken;
-  font-size: 0.6em;
-  margin-left: 5px;
-}
+	.section {
+		color: $dark;
+		overflow: hidden;
+		padding-top: 3.5em;
+		padding-bottom: 3.5em;
 
-ul:not(:last-child) {
-  margin-bottom: 50px;
-}
+		h2 {
+			border-left: 3px solid $silver-pink;
+			padding-left: 10px;
+		}
+	}
 
-.box {
-  display: flex;
-  align-items: center;
-}
+	.text-accent-color {
+		color: $old-pink-lighten;
+		text-shadow: 1px 1px 2px $dark;
+	}
+
+	.text-accent-font {
+		font-family: $accent-font;
+	}
 </style>

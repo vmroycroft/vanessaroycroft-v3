@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Nixie+One|Roboto');
+
 /* Fonts */
-$font: 'Roboto', sans-serif;
+$font-family: 'Roboto', sans-serif;
 $accent-font: 'Nixie One', sans-serif;
+$font-size: responsive 16px 18px; /* See https://www.rucksackcss.org/docs/#responsive-type */
+$font-size-h1: 2.3em;
+$font-size-h2: 1.6em;
+$font-size-h3: 1.3em;
 
 /* Coolors Exported Palette - coolors.co/565264-706677-a6808c-ccb7ae-d6cfcb */
 $old-silver-lighten: #84818e; //rgba(132, 129, 142, 1);
@@ -25,20 +31,9 @@ $pastel-grey-darken: #9c9794; //rgba(156, 151, 148, 1);
 
 $dark: #1b1b1b;
 
-/* Responsive layout */
-/* Large devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (min-height: 412px) {
-	body {
-		font-size: 16px !important;
-	}
-	.container {
-		max-width: 70%;
-	}
-}
+/* Line Height */
+$line-height: 1.5;
 
-/* Large devices (laptops/desktops, 1024px and up) */
-@media only screen and (min-width: 1200px) {
-	.container {
-		max-width: 60%;
-	}
-}
+/* Links */
+$link-color: $silver-pink-darken;
+$link-color-hover: rgba($silver-pink-darken, 0.7);

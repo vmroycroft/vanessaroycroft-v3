@@ -51,9 +51,13 @@ export default {
 <style lang="scss" scoped>
 .section {
   background-color: $old-pink-darken;
-  // margin-top: -2.2em;
+  margin-top: -1.5em;
   position: relative;
   z-index: 2;
+}
+
+p:first-child {
+  margin-top: 0;
 }
 
 .grid-container {

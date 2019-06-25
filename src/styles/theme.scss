@@ -24,6 +24,7 @@ $old-pink-darken: #795e66; //rgba(121, 94, 102, 1);
 $silver-pink-lighten: #d9cac4; //rgba(217, 202, 196, 1);
 $silver-pink: #ccb7ae; //rgba(204, 183, 174, 1);
 $silver-pink-darken: #95867f; //rgba(149, 134, 127, 1);
+$silver-pink-darkest: #6f635e;
 
 $pastel-grey-lighten: #e1dcd9; //rgba(225, 220, 217, 1);
 $pastel-grey: #d6cfcb; //rgba(214, 207, 203, 1);
@@ -36,4 +37,4 @@ $line-height: 1.5;
 
 /* Links */
 $link-color: $silver-pink-darken;
-$link-color-hover: rgba($silver-pink-darken, 0.8);
+$link-color-hover: $silver-pink-darkest;

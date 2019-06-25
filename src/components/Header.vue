@@ -41,13 +41,15 @@
         I'm a full stack developer with a background in software engineering.
         <div class="interests">
           I
-          <font-awesome-icon icon="heart" class="text-accent-color" />
+          <font-awesome-icon
+            icon="heart"
+            class="heart-icon text-accent-color"
+          />
           snowboarding, running, & learning.
         </div>
       </div>
     </div>
-    <div class="angle-left-2"></div>
-    <div class="angle-left-1"></div>
+    <div class="angle-left"></div>
     <div class="angle-right"></div>
   </header>
 </template>
@@ -188,41 +190,51 @@ h1 {
   }
 }
 
-.angle-left-1,
-.angle-left-2,
+.angle-left,
 .angle-right {
   height: 100%;
-}
-.angle-left-2 {
-  height: 100%;
-}
-
-.angle-left-2 {
-  width: 52%;
-
-  @include angled-edge(
-    "inside bottom",
-    "upper right",
-    $old-lavender-lighten,
-    25
-  );
-  position: absolute;
-  left: 0;
-}
-
-.angle-left-1 {
   width: 100%;
+  top: 1px;
+}
 
-  @include angled-edge("inside bottom", "upper right", $old-pink-lighten, 15);
+.angle-left {
+  @include angled-edge("inside bottom", "upper right", $old-pink-darken, 25);
   position: absolute;
   left: 0;
 }
 
 .angle-right {
-  width: 100%;
-
-  @include angled-edge("inside bottom", "upper left", $old-pink-darken, 35);
+  @include angled-edge("inside bottom", "upper left", $old-pink-darken, 25);
   position: absolute;
   right: 0;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.85);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(0.85);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.85);
+  }
+
+  100% {
+    transform: scale(0.85);
+  }
+}
+
+.heart-icon {
+  animation: heartbeat 1s infinite;
 }
 </style>

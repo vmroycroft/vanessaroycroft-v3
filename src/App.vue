@@ -59,6 +59,7 @@ body,
 a {
   color: $link-color;
   text-decoration: none;
+  transition: 0.4s;
 }
 a:hover {
   cursor: pointer;
@@ -137,7 +138,27 @@ ul {
   h2 {
     border-left: 3px solid $silver-pink;
     padding-left: 10px;
+    // padding-right: 14px;
+    // transition: 0.3s;
+    // display: inline-block;
+    // background: linear-gradient(
+    //   to right,
+    //   $silver-pink 50%,
+    //   rgba(0, 0, 0, 0) 50%
+    // );
+    // // background: linear-gradient(
+    // //   to right,
+    // //   rgba($silver-pink, 0.4) 50%,
+    // //   rgba(0, 0, 0, 0) 50%
+    // // );
+    // background-size: 200% 100%;
+    // background-position: right bottom;
+    // transition: all 0.5s ease-out;
   }
+  // &:hover h2 {
+  //   background-position: left bottom;
+  //   color: $silver-pink-darken;
+  // }
 }
 
 .text-accent-color {

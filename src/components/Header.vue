@@ -211,7 +211,7 @@ h1 {
 
 @keyframes heartbeat {
   0% {
-    transform: scale(0.85);
+    transform: scale(0.9);
   }
 
   20% {
@@ -219,18 +219,18 @@ h1 {
   }
 
   40% {
-    transform: scale(0.85);
+    transform: scale(0.9);
   }
 
   60% {
     transform: scale(1);
   }
   80% {
-    transform: scale(0.85);
+    transform: scale(0.9);
   }
 
   100% {
-    transform: scale(0.85);
+    transform: scale(0.9);
   }
 }
 

@@ -5,6 +5,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 3.4.0: June 24, 2019
+
+### Added
+
+- UI changes for the "Header" section
+
 ## 3.3.0: June 7, 2019
 
 ### Added

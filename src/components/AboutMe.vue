@@ -25,14 +25,16 @@
           <span class="item lg">JavaScript (ES6)</span>
           <span class="item">HTML</span>
           <span class="item">SCSS</span>
-          <span class="item">PHP</span>
-          <span class="item md">jQuery</span>
-          <span class="item md">Vue.js</span>
-          <span class="item">npm</span>
-          <span class="item md">Subversion</span>
-          <span class="item">Git</span>
-          <span class="item">SQL</span>
           <span class="item md">Apache</span>
+          <span class="item md">jQuery</span>
+          <span class="item">SQL</span>
+          <span class="item">npm</span>
+          <span class="item md">Vue.js</span>
+          <span class="item lg">Subversion</span>
+          <span class="item">Git</span>
+          <span class="item md">GraphQL</span>
+          <span class="item">PHP</span>
+          <span class="item md">MongoDB</span>
           <span class="item md">Node.js</span>
           <span class="item lg">Amazon Web Services</span>
         </div>
@@ -65,12 +67,11 @@ p:first-child {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  grid-auto-flow: row dense;
   .item {
-    // font-family: $accent-font;
     padding: 0.75em 0;
     text-align: center;
     border: 3px solid $old-lavender-lighten;
-    // color: $old-lavender-lighten;
     color: $pastel-grey;
     &.md {
       grid-column: span 2;
@@ -78,17 +79,29 @@ p:first-child {
     &.lg {
       grid-column: span 3;
     }
-    &.xl {
-      grid-column: span 4;
-    }
 
     &:nth-child(2n) {
       border-color: $pastel-grey-darken;
-      // color: $pastel-grey-darken;
     }
     &:nth-child(3n) {
       border-color: $old-silver-lighten;
-      // color: $old-silver-lighten;
+    }
+  }
+}
+
+/* Alternative to grid for IE10+ */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .grid-container {
+    .item {
+      float: left;
+      min-width: 70px;
+      margin: 8px;
+      &.md {
+        min-width: 130px;
+      }
+      &.lg {
+        min-width: 210px;
+      }
     }
   }
 }

@@ -83,7 +83,7 @@ export default {
   },
   methods: {
     repositionName: function() {
-      if (window.scrollY > this.target) {
+      if (window.pageYOffset > this.target) {
         this.topBarContent.classList.remove("hidden");
         this.topBarContent.classList.replace("fadeOut", "fadeIn");
         this.topBar.classList.replace("resize-larger", "resize-smaller");
@@ -169,6 +169,7 @@ h1 {
 .top-bar {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: $top-bar-height;
   background: $silver-pink-lighten;
